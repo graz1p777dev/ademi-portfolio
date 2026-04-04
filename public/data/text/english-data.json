@@ -1,0 +1,188 @@
+{
+  "hero": {
+    "name": "Ademi Tergenbaeva",
+    "fullName": "Ademi Tergenbaeva Zhomartovna",
+    "tagline": "Skin is not cosmetics. It's science.",
+    "subtitle": "Entrepreneur | Dermatologist | Skin Expert",
+    "location": "Bishkek, Kyrgyzstan",
+    "slogan": "Beauty through knowledge, health through science",
+    "telegram": "https://t.me/ademi_doctor",
+    "instagram": "https://instagram.com/doctor_ademi",
+    "avatar": "https://instagram.ffru1-4.fna.fbcdn.net/v/t51.82787-19/572095441_18293575735277243_2400528078214475522_n.jpg",
+    "localPhoto": "/images/ademi-main-photo.jpg"
+  },
+  "brand": {
+    "name": "Demi Results",
+    "image": "https://instagram.ffru1-3.fna.fbcdn.net/v/t51.82787-19/588452014_17953880493043363_6494850109638003503_n.jpg"
+  },
+  "about": {
+    "title": "About Me",
+    "text": "I'm not just a doctor — I'm someone who believes: beautiful skin starts with the right knowledge. A dermatology resident, founder of Demi Results, and mentor to skin experts. I combine medicine, aesthetics, and a systematic approach so everyone can truly understand their skin.",
+    "roles": [
+      "Founder of Demi Results",
+      "Dermatology Resident",
+      "Dermatologist",
+      "Skin Expert",
+      "Mentor",
+      "Mom"
+    ]
+  },
+  "profile": {
+    "title": "Professional Profile",
+    "cards": [
+      {
+        "icon": "stethoscope",
+        "title": "Dermatologist",
+        "desc": "Medical foundation and clinical experience"
+      },
+      {
+        "icon": "graduation-cap",
+        "title": "Resident",
+        "desc": "Dermatovenereology, advanced specialization"
+      },
+      {
+        "icon": "sparkles",
+        "title": "Founder",
+        "desc": "Demi Results — #1 in Kyrgyzstan"
+      },
+      {
+        "icon": "beaker",
+        "title": "Skin Expert",
+        "desc": "Evidence-based approach to skincare"
+      },
+      {
+        "icon": "users",
+        "title": "Mentor",
+        "desc": "Training skin experts in the profession"
+      },
+      {
+        "icon": "map-pin",
+        "title": "Bishkek",
+        "desc": "Kyrgyzstan"
+      }
+    ]
+  },
+  "activity": {
+    "title": "My Activities",
+    "items": [
+      {
+        "title": "Consultations",
+        "desc": "Personal skin analysis and skincare selection"
+      },
+      {
+        "title": "Dermatology",
+        "desc": "Clinical experience and scientific approach"
+      },
+      {
+        "title": "Demi Results",
+        "desc": "#1 professional skincare store in Kyrgyzstan"
+      },
+      {
+        "title": "Education",
+        "desc": "Training skin experts by a dermatologist"
+      },
+      {
+        "title": "Personal Brand",
+        "desc": "Expert blog and professional content"
+      },
+      {
+        "title": "Entrepreneurship",
+        "desc": "Developing beauty business in Kyrgyzstan"
+      }
+    ]
+  },
+  "mission": {
+    "title": "Approach",
+    "text": "I help people better understand their skin, build proper skincare routines, and look at beauty through the lens of health, knowledge, and a systematic approach.",
+    "values": [
+      "Science over myths",
+      "Individual approach",
+      "Honesty",
+      "Professionalism"
+    ]
+  },
+  "store": {
+    "badge": "#1 Store in Kyrgyzstan",
+    "desc": "Professional skincare selection by skin experts trained by dermatologist @doctor_ademi",
+    "address": "Baitik Baatyr Street, 39, Bishkek, Kyrgyzstan",
+    "cta": "Book Now"
+  },
+  "social": [
+    {
+      "platform": "Instagram",
+      "handle": "@doctor_ademi",
+      "url": "https://instagram.com/doctor_ademi",
+      "icon": "instagram"
+    },
+    {
+      "platform": "Telegram",
+      "handle": "@ademi_doctor",
+      "url": "https://t.me/ademi_doctor",
+      "icon": "telegram"
+    },
+    {
+      "platform": "Demi Results",
+      "handle": "@demi.results",
+      "url": "https://instagram.com/demi.results",
+      "icon": "store"
+    },
+    {
+      "platform": "WhatsApp",
+      "handle": "+996 706 007 125",
+      "url": "https://wa.me/996706007125",
+      "icon": "whatsapp"
+    }
+  ],
+  "contact": {
+    "title": "Get in Touch",
+    "telegram": "https://t.me/ademi_doctor",
+    "instagram": "https://instagram.com/doctor_ademi",
+    "address": "Baitik Baatyr Street, 39, Bishkek, Kyrgyzstan",
+    "whatsapp": "https://wa.me/996706007125"
+  },
+  "footer": {
+    "name": "Ademi Tergenbaeva Zhomartovna",
+    "brand": "Demi Results",
+    "location": "Bishkek, Kyrgyzstan"
+  },
+  "labels": {
+    "about": "About Me",
+    "profile": "Profile",
+    "activity": "Activities",
+    "mission": "Approach",
+    "social": "Find Me",
+    "contact": "Contact",
+    "socialTitle": "Social & Links",
+    "openLink": "Open →",
+    "team": "Team"
+  },
+  "nav": {
+    "about": "About",
+    "profile": "Profile",
+    "activity": "Activities",
+    "social": "Social",
+    "contact": "Contact",
+    "team": "Team"
+  },
+  "team": {
+    "title": "My Team",
+    "desc": "Every Demi Results skin expert is a professional personally trained by a dermatologist. We don't just sell — we help, educate, and guide towards results.",
+    "members": [
+      {
+        "name": "Ademi Tergenbaeva",
+        "role": "Founder & Dermatologist",
+        "desc": "Dermatologist, resident, brand creator and the visionary behind everything we do."
+      },
+      {
+        "name": "Skin Experts",
+        "role": "Demi Results Consultants",
+        "desc": "Personally trained by a dermatologist. Know every product and select skincare individually."
+      },
+      {
+        "name": "Managers",
+        "role": "Service & Care",
+        "desc": "Deliver the best client experience — from first consultation to delivery."
+      }
+    ]
+  }
+}

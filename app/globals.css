@@ -1,26 +1,126 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-navy: #001e3c;
+  --color-navy-mid: #00294f;
+  --color-milk: #faf8f4;
+  --color-cream: #f0ede6;
+  --color-gold: #c9a96e;
+  --color-gold-light: #e8d5b0;
+  --color-gold-dark: #a68740;
+  --color-dark: #060d16;
+  --color-text-main: #1c1c2e;
+  --color-text-muted: #6b7280;
+
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Jost', sans-serif;
+  --font-cursive: 'Great Vibes', cursive;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: smooth; }
+
+/* GPU acceleration for animated elements — use backface-visibility to avoid overriding transform */
+[style*="animation"] { will-change: transform, opacity; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-milk);
+  color: var(--color-text-main);
+  font-family: var(--font-body);
+  font-weight: 300;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-cream); }
+::-webkit-scrollbar-thumb { background: var(--color-gold); border-radius: 3px; }
+
+/* Animated gold line shimmer */
+@keyframes lineShimmer {
+  0%   { background-position: -300px 0; }
+  100% { background-position: 500px 0; }
+}
+
+.gold-line {
+  height: 1px;
+  background: linear-gradient(90deg, var(--color-gold) 30%, var(--color-gold-light) 50%, var(--color-gold) 70%);
+  background-size: 500px 1px;
+  animation: lineShimmer 5s ease-in-out infinite;
+}
+
+/* Card breathing glow */
+@keyframes cardBreath {
+  0%, 100% { box-shadow: 0 1px 4px rgba(0,30,60,0.04); }
+  50%      { box-shadow: 0 6px 28px rgba(201,169,110,0.13), 0 1px 8px rgba(0,30,60,0.06); }
+}
+
+/* Number glow */
+@keyframes numGlow {
+  0%, 100% { opacity: 0.6; text-shadow: none; }
+  50%      { opacity: 1; text-shadow: 0 0 14px rgba(201,169,110,0.55); }
+}
+
+/* Chip border glow */
+@keyframes chipGlow {
+  0%, 100% { border-color: rgba(0,30,60,0.14); box-shadow: none; }
+  50%      { border-color: rgba(201,169,110,0.4); box-shadow: 0 0 10px rgba(201,169,110,0.1); }
+}
+
+/* Value border pulse */
+@keyframes valueBorder {
+  0%, 100% { border-left-color: var(--color-gold); }
+  50%      { border-left-color: var(--color-gold-light); box-shadow: -4px 0 16px rgba(201,169,110,0.18); }
+}
+
+/* Social card glow */
+@keyframes socialBreath {
+  0%, 100% { box-shadow: 0 1px 4px rgba(0,30,60,0.05); }
+  50%      { box-shadow: 0 8px 32px rgba(0,30,60,0.14), 0 0 0 1px rgba(201,169,110,0.1); }
+}
+
+/* Accent pulse */
+@keyframes accentPulse {
+  0%, 100% { box-shadow: none; }
+  50%      { box-shadow: 0 0 24px rgba(201,169,110,0.2); }
+}
+
+/* Badge shimmer */
+@keyframes badgeSweep {
+  0%   { background-position: -200px 0; }
+  100% { background-position: 300px 0; }
+}
+
+/* Floating particles */
+@keyframes floatParticle {
+  0%   { opacity: 0; transform: translateY(0) scale(0); }
+  12%  { opacity: 0.55; transform: translateY(-18px) scale(1); }
+  88%  { opacity: 0.15; transform: translateY(-110px) scale(0.4); }
+  100% { opacity: 0; transform: translateY(-140px) scale(0); }
+}
+
+/* Ring rotations */
+@keyframes spinCW  { to { transform: rotate(360deg); } }
+@keyframes spinCCW { to { transform: rotate(-360deg); } }
+
+/* Scroll drop */
+@keyframes scrollDrop {
+  0%   { transform: scaleY(0); transform-origin: top; opacity: 1; }
+  50%  { transform: scaleY(1); transform-origin: top; }
+  51%  { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; opacity: 0; }
+}
+
+/* Story page horizontal scroll */
+.story-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.story-container::-webkit-scrollbar { display: none; }
+.story-slide {
+  flex: 0 0 100vw;
+  min-height: 100dvh;
+  scroll-snap-align: start;
 }
