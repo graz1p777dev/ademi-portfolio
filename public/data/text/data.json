@@ -190,6 +190,55 @@
   "certificates": {
     "title": "Сертификаты и обучение",
     "subtitle": "Документы, подтверждающие квалификацию и пройденное обучение.",
-    "items": []
+    "items": [
+      {
+        "image": "/data/certificates/skin-expert-3-2024.webp",
+        "title": "Skin Expert 3.0",
+        "issuer": "Alisa Furman Online School",
+        "date": "2024"
+      },
+      {
+        "image": "/data/certificates/cosmetology-basic-2024.webp",
+        "title": "Специалист по аппаратной косметологии — Косметолог-эстетист",
+        "issuer": "BeautyMed Experts, Бишкек",
+        "date": "янв.–март 2024"
+      },
+      {
+        "image": "/data/certificates/rosacea-2026.webp",
+        "title": "Розацеа. Периоральный и себорейный дерматиты",
+        "issuer": "Shkola Kozhi — Меньщикова Галина",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/psoriasis-2026.webp",
+        "title": "Псориаз",
+        "issuer": "Shkola Kozhi — Меньщикова Галина",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/foot-skin-nails-2026.webp",
+        "title": "Болезни кожи стоп и ногтей",
+        "issuer": "Shkola Kozhi — Меньщикова Галина",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/retinoids-2026.webp",
+        "title": "Эксперт по ретиноидам",
+        "issuer": "Shkola Kozhi — Меньщикова Галина",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/acne-2026.webp",
+        "title": "Как лечить акне правильно",
+        "issuer": "Shkola Kozhi — Меньщикова Галина",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/dermatophytes.webp",
+        "title": "Грибы. Поверхностные дерматофитии кожи, волос и ногтей",
+        "issuer": "Skin Doctor School — Рамазанова А.Г.",
+        "date": null
+      }
+    ]
   }
 }

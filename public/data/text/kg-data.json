@@ -190,6 +190,55 @@
   "certificates": {
     "title": "Сертификаттар жана окуу",
     "subtitle": "Квалификацияны жана өтүлгөн окууну ырастаган документтер.",
-    "items": []
+    "items": [
+      {
+        "image": "/data/certificates/skin-expert-3-2024.webp",
+        "title": "Skin Expert 3.0",
+        "issuer": "Alisa Furman Online School",
+        "date": "2024"
+      },
+      {
+        "image": "/data/certificates/cosmetology-basic-2024.webp",
+        "title": "Аппараттык косметология адиси — Косметолог-эстетист",
+        "issuer": "BeautyMed Experts, Бишкек",
+        "date": "янв.–март 2024"
+      },
+      {
+        "image": "/data/certificates/rosacea-2026.webp",
+        "title": "Розацеа. Периоралдык жана себорейдик дерматиттер",
+        "issuer": "Shkola Kozhi — Меньщикова Галина",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/psoriasis-2026.webp",
+        "title": "Псориаз",
+        "issuer": "Shkola Kozhi — Меньщикова Галина",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/foot-skin-nails-2026.webp",
+        "title": "Таман жана тырмак терисинин оорулары",
+        "issuer": "Shkola Kozhi — Меньщикова Галина",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/retinoids-2026.webp",
+        "title": "Ретиноиддер боюнча эксперт",
+        "issuer": "Shkola Kozhi — Меньщикова Галина",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/acne-2026.webp",
+        "title": "Акнени туура дарылоо",
+        "issuer": "Shkola Kozhi — Меньщикова Галина",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/dermatophytes.webp",
+        "title": "Козу карындар. Тери, чач жана тырмактын үстүртөн дерматофитиясы",
+        "issuer": "Skin Doctor School — Рамазанова А.Г.",
+        "date": null
+      }
+    ]
   }
 }

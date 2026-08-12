@@ -190,6 +190,55 @@
   "certificates": {
     "title": "Certificates & training",
     "subtitle": "Documents confirming qualification and completed training.",
-    "items": []
+    "items": [
+      {
+        "image": "/data/certificates/skin-expert-3-2024.webp",
+        "title": "Skin Expert 3.0",
+        "issuer": "Alisa Furman Online School",
+        "date": "2024"
+      },
+      {
+        "image": "/data/certificates/cosmetology-basic-2024.webp",
+        "title": "Specialist in Instrumental Cosmetology — Cosmetologist-Aesthetician",
+        "issuer": "BeautyMed Experts, Bishkek",
+        "date": "Jan–Mar 2024"
+      },
+      {
+        "image": "/data/certificates/rosacea-2026.webp",
+        "title": "Rosacea. Perioral and Seborrheic Dermatitis",
+        "issuer": "Shkola Kozhi — Galina Menshchikova",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/psoriasis-2026.webp",
+        "title": "Psoriasis",
+        "issuer": "Shkola Kozhi — Galina Menshchikova",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/foot-skin-nails-2026.webp",
+        "title": "Skin Diseases of Feet and Nails",
+        "issuer": "Shkola Kozhi — Galina Menshchikova",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/retinoids-2026.webp",
+        "title": "Retinoid Expert",
+        "issuer": "Shkola Kozhi — Galina Menshchikova",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/acne-2026.webp",
+        "title": "How to Treat Acne Correctly",
+        "issuer": "Shkola Kozhi — Galina Menshchikova",
+        "date": "2026"
+      },
+      {
+        "image": "/data/certificates/dermatophytes.webp",
+        "title": "Fungi. Superficial Dermatophytosis of Skin, Hair and Nails",
+        "issuer": "Skin Doctor School — A. Ramazanova",
+        "date": null
+      }
+    ]
   }
 }
