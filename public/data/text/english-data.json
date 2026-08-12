@@ -154,7 +154,8 @@
     "contact": "Contact",
     "socialTitle": "Social & Links",
     "openLink": "Open →",
-    "team": "Team"
+    "team": "Team",
+    "certificates": "Certificates"
   },
   "nav": {
     "about": "About",
@@ -162,7 +163,8 @@
     "activity": "Activities",
     "social": "Social",
     "contact": "Contact",
-    "team": "Team"
+    "team": "Team",
+    "certificates": "Certificates"
   },
   "team": {
     "title": "My Team",
@@ -184,5 +186,10 @@
         "desc": "Deliver the best client experience — from first consultation to delivery."
       }
     ]
+  },
+  "certificates": {
+    "title": "Certificates & training",
+    "subtitle": "Documents confirming qualification and completed training.",
+    "items": []
   }
 }

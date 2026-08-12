@@ -8,6 +8,7 @@ import Store from './components/Store';
 import Profile from './components/Profile';
 import Team from './components/Team';
 import Activity from './components/Activity';
+import Certificates from './components/Certificates';
 import Mission from './components/Mission';
 import Social from './components/Social';
 import StoryCTA from './components/StoryCTA';
@@ -25,6 +26,7 @@ export default function Home() {
         <Profile />
         <Team />
         <Activity />
+        <Certificates />
         <Mission />
         <Social />
         <StoryCTA />

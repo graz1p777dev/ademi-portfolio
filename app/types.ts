@@ -61,6 +61,23 @@ export interface TeamData {
   members: TeamMember[];
 }
 
+export interface CertificateItem {
+  /** Путь к файлу в public, например /data/certificates/derma-2024.jpg */
+  image: string;
+  /** За что выдан */
+  title: string;
+  /** Кто выдал */
+  issuer?: string;
+  /** Когда: год или «Март 2024» */
+  date?: string;
+}
+
+export interface CertificatesData {
+  title: string;
+  subtitle?: string;
+  items: CertificateItem[];
+}
+
 export interface StoreData {
   badge: string;
   desc: string;
@@ -99,12 +116,14 @@ export interface Labels {
   socialTitle: string;
   openLink: string;
   team: string;
+  certificates?: string;
 }
 
 export interface NavLabels {
   about: string;
   profile: string;
   activity: string;
+  certificates?: string;
   team: string;
   social: string;
   contact: string;
@@ -117,6 +136,7 @@ export interface PortfolioData {
   profile: ProfileData;
   activity: ActivityData;
   team: TeamData;
+  certificates?: CertificatesData;
   mission: MissionData;
   store: StoreData;
   social: SocialItem[];
