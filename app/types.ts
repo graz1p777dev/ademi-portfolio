@@ -7,6 +7,7 @@ export interface HeroData {
   slogan: string;
   telegram: string;
   instagram: string;
+  whatsapp?: string;
   avatar?: string;
   localPhoto?: string;
 }

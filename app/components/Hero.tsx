@@ -82,6 +82,9 @@ export default function Hero() {
       <motion.div className="flex gap-3.5 flex-wrap justify-center" {...fadeUp(1.28)}>
         <a href={hero.telegram} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3.5 text-[11px] tracking-[0.2em] uppercase font-medium bg-gold text-navy rounded-sm hover:-translate-y-0.5 hover:shadow-[0_20px_60px_rgba(201,169,110,0.22)] transition-all">Telegram</a>
         <a href={hero.instagram} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3.5 text-[11px] tracking-[0.2em] uppercase font-medium border border-white/18 text-milk rounded-sm hover:border-gold hover:text-gold hover:-translate-y-0.5 transition-all">Instagram</a>
+        {hero.whatsapp && (
+          <a href={hero.whatsapp} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-8 py-3.5 text-[11px] tracking-[0.2em] uppercase font-medium border border-white/18 text-milk rounded-sm hover:border-gold hover:text-gold hover:-translate-y-0.5 transition-all">WhatsApp</a>
+        )}
       </motion.div>
 
       <motion.div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2.5" {...fadeUp(2)}>
