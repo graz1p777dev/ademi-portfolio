@@ -70,9 +70,8 @@ export default function Hero() {
       )}
 
       <motion.p className="mt-6 font-display italic text-white/80 max-w-lg leading-relaxed" style={{ fontSize: 'clamp(19px, 4.5vw, 27px)' }} {...fadeUp(0.95)}>
-        {hero.tagline && `\u00AB\u202F${hero.tagline}\u202F\u00BB`}
+        {hero.tagline}
       </motion.p>
-      <motion.p className="mt-2.5 text-[11px] tracking-[0.18em] text-gold" {...fadeUp(1.05)}>{hero.slogan}</motion.p>
       <motion.div className="flex items-center gap-1.5 mt-3.5 text-[11px] tracking-[0.1em] text-white/28" {...fadeUp(1.12)}>
         <MapPin className="w-[13px] h-[13px]" /> {hero.location}
       </motion.div>
