@@ -10,8 +10,6 @@ import { useLang } from '../context';
 const NAV_ITEMS = [
   { href: '#about', key: 'about' },
   { href: '#profile', key: 'profile' },
-  { href: '#team', key: 'team' },
-  { href: '#activity', key: 'activity' },
   { href: '#certificates', key: 'certificates' },
   { href: '#social', key: 'social' },
   { href: '#contact', key: 'contact' },

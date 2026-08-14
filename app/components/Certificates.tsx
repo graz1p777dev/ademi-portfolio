@@ -151,15 +151,16 @@ export default function Certificates() {
                 {item.issuer && (
                   <p className="mt-2 text-xs text-white/40 tracking-wide italic">{item.issuer}</p>
                 )}
-                {item.date && (
-                  <span className="mt-3 inline-block text-[10px] tracking-[0.22em] uppercase text-gold-light/90 border border-gold/25 rounded-full px-3 py-1 bg-gold/[0.06]">
-                    {item.date}
-                  </span>
-                )}
               </div>
             </motion.button>
           ))}
         </div>
+
+        {certificates.note && (
+          <motion.p {...reveal} transition={{ ...reveal.transition, delay: 0.3 }} className="mt-12 text-white/30 text-xs max-w-xl">
+            {certificates.note}
+          </motion.p>
+        )}
       </div>
 
       {/* Лайтбокс: сертификат целиком, чтобы можно было прочитать */}

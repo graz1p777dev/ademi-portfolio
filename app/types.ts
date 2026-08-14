@@ -17,31 +17,23 @@ export interface BrandData {
   image?: string;
 }
 
-export interface AboutData {
-  title: string;
-  text: string;
-  roles: string[];
+export interface AboutStat {
+  value: string;
+  label: string;
 }
 
-export interface ProfileCard {
-  icon: string;
+export interface AboutData {
   title: string;
-  desc: string;
+  text: string[];
+  roles: string[];
+  stats: AboutStat[];
 }
 
 export interface ProfileData {
   title: string;
-  cards: ProfileCard[];
-}
-
-export interface ActivityItem {
-  title: string;
   desc: string;
-}
-
-export interface ActivityData {
-  title: string;
-  items: ActivityItem[];
+  notesTitle: string;
+  notesNote: string;
 }
 
 export interface MissionData {
@@ -50,16 +42,9 @@ export interface MissionData {
   values: string[];
 }
 
-export interface TeamMember {
-  name: string;
-  role: string;
-  desc: string;
-}
-
 export interface TeamData {
   title: string;
   desc: string;
-  members: TeamMember[];
 }
 
 export interface CertificateItem {
@@ -76,6 +61,7 @@ export interface CertificateItem {
 export interface CertificatesData {
   title: string;
   subtitle?: string;
+  note?: string;
   items: CertificateItem[];
 }
 
@@ -110,22 +96,18 @@ export interface FooterData {
 export interface Labels {
   about: string;
   profile: string;
-  activity: string;
   mission: string;
   social: string;
   contact: string;
   socialTitle: string;
   openLink: string;
-  team: string;
   certificates?: string;
 }
 
 export interface NavLabels {
   about: string;
   profile: string;
-  activity: string;
   certificates?: string;
-  team: string;
   social: string;
   contact: string;
 }
@@ -135,7 +117,6 @@ export interface PortfolioData {
   brand: BrandData;
   about: AboutData;
   profile: ProfileData;
-  activity: ActivityData;
   team: TeamData;
   certificates?: CertificatesData;
   mission: MissionData;

@@ -18,12 +18,26 @@ export default function About() {
             <motion.span {...reveal} className="inline-flex items-center gap-3 text-[10px] tracking-[0.38em] uppercase text-gold mb-3.5 before:content-[''] before:w-5 before:h-px before:bg-gold">{data.labels.about}</motion.span>
             <motion.h2 {...reveal} transition={{ ...reveal.transition, delay: 0.1 }} className="font-display font-light leading-tight text-navy" style={{ fontSize: 'clamp(34px, 7vw, 56px)' }}>{data.about.title}</motion.h2>
             <motion.div {...reveal} transition={{ ...reveal.transition, delay: 0.2 }} className="gold-line w-12 my-5" />
-            <motion.p {...reveal} transition={{ ...reveal.transition, delay: 0.3 }} className="font-display italic leading-relaxed text-text-main mb-8" style={{ fontSize: 'clamp(17px, 3.2vw, 21px)' }}>{data.about.text}</motion.p>
+            <div className="mb-8">
+              {data.about.text.map((paragraph, i) => (
+                <motion.p key={i} {...reveal} transition={{ ...reveal.transition, delay: 0.3 + i * 0.05 }} className="font-display italic leading-relaxed text-text-main mb-3 last:mb-0" style={{ fontSize: 'clamp(17px, 3.2vw, 21px)' }}>{paragraph}</motion.p>
+              ))}
+            </div>
             <motion.div {...reveal} transition={{ ...reveal.transition, delay: 0.4 }} className="flex flex-wrap gap-2.5">
               {data.about.roles.map((role, i) => (
                 <span key={role} className="px-4 py-2 border border-navy/14 rounded-full text-[11px] tracking-[0.06em] text-navy cursor-default hover:bg-navy hover:text-milk hover:border-navy hover:-translate-y-0.5 transition-all" style={{ animation: `chipGlow 4.5s ease-in-out infinite ${i * 0.75}s` }}>{role}</span>
               ))}
             </motion.div>
+            {data.about.stats?.length > 0 && (
+              <motion.div {...reveal} transition={{ ...reveal.transition, delay: 0.5 }} className="grid grid-cols-2 gap-x-6 gap-y-6 mt-10 pt-8 border-t border-navy/10">
+                {data.about.stats.map((stat, i) => (
+                  <div key={i}>
+                    <div className="font-display text-2xl font-medium text-gold leading-tight" style={{ fontSize: 'clamp(19px, 2.6vw, 24px)' }}>{stat.value}</div>
+                    <div className="text-xs text-text-muted leading-relaxed mt-1">{stat.label}</div>
+                  </div>
+                ))}
+              </motion.div>
+            )}
           </div>
           <motion.div {...reveal} transition={{ ...reveal.transition, delay: 0.2 }} className="relative hidden lg:block">
             <div className="relative aspect-[3/4] max-h-[480px] overflow-hidden rounded-sm before:content-[''] before:absolute before:-top-2.5 before:-right-2.5 before:w-20 before:h-20 before:border-t before:border-r before:border-gold/35 before:z-10 after:content-[''] after:absolute after:-bottom-2.5 after:-left-2.5 after:w-20 after:h-20 after:border-b after:border-l after:border-gold/35 after:z-10 group">
