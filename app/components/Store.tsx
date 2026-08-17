@@ -30,6 +30,7 @@ export default function Store() {
               <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent" />
             </div>
             <span className="font-display text-xl text-white/35 font-light">Клиенты</span>
+            <p className="font-display italic text-white/45 leading-relaxed text-center text-sm max-w-[240px]">{data.team.desc}</p>
           </motion.div>
           <div>
             <motion.div {...reveal} className="inline-block px-4 py-1.5 text-[10px] tracking-[0.22em] uppercase font-semibold rounded-sm mb-5 text-navy" style={{ background: 'linear-gradient(90deg, #c9a96e 30%, #e8d5b0 50%, #c9a96e 70%)', backgroundSize: '300px 100%', animation: 'badgeSweep 4s ease-in-out infinite' }}>{data.store.badge}</motion.div>
