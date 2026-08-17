@@ -17,14 +17,19 @@ export default function Store() {
       <div className="max-w-[1100px] mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr] gap-18 items-center">
           <motion.div {...reveal} className="flex flex-col items-center gap-5">
-            <div className="relative w-full max-w-[240px] aspect-square rounded-sm overflow-hidden group">
+            <div className="w-56 h-56 rounded-full overflow-hidden border border-gold/18">
+              <Image src="/data/photo/demi-results.logo.png" alt="Demi Results" width={224} height={224} className="w-full h-full object-cover" />
+            </div>
+            <span className="font-display text-xl text-white/35 font-light">{data.brand.name}</span>
+
+            <div className="relative w-full max-w-[240px] aspect-square rounded-sm overflow-hidden group mt-4">
               <div className="absolute -inset-px z-10 pointer-events-none border border-gold/15 rounded-sm" />
               <div className="absolute z-10 pointer-events-none w-12 h-12 -top-1 -left-1 border-t border-l border-gold/25" />
               <div className="absolute z-10 pointer-events-none w-12 h-12 -bottom-1 -right-1 border-b border-r border-gold/25" />
-              <Image src="/data/photo/my-command.png" alt={data.brand.name} fill className="object-cover group-hover:scale-[1.02] transition-transform duration-700" />
+              <Image src="/data/photo/my-command.png" alt="Клиенты" fill className="object-cover group-hover:scale-[1.02] transition-transform duration-700" />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent" />
             </div>
-            <span className="font-display text-xl text-white/35 font-light">{data.brand.name}</span>
+            <span className="font-display text-xl text-white/35 font-light">Клиенты</span>
           </motion.div>
           <div>
             <motion.div {...reveal} className="inline-block px-4 py-1.5 text-[10px] tracking-[0.22em] uppercase font-semibold rounded-sm mb-5 text-navy" style={{ background: 'linear-gradient(90deg, #c9a96e 30%, #e8d5b0 50%, #c9a96e 70%)', backgroundSize: '300px 100%', animation: 'badgeSweep 4s ease-in-out infinite' }}>{data.store.badge}</motion.div>
