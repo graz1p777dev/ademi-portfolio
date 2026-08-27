@@ -86,4 +86,4 @@ Or connect this repo to [Vercel](https://vercel.com) for automatic deployments o
 ## Credits
 
 - **Portfolio owner:** Адеми Тергенбаева
-- **Development:** [Alihan Torebekov](https://alihan-torebekov-portfolio.vercel.app/)
+- **Development:** [Alihan Torebekov](https://alihan-torebekov.kg/)

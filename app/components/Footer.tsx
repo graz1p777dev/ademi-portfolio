@@ -21,7 +21,7 @@ export default function Footer() {
       </div>
       <p className="text-[10px] text-white/10 leading-relaxed tracking-wide">&copy; {new Date().getFullYear()} {data.footer.name} &middot; {data.footer.brand} &middot; {data.footer.location}</p>
       <div className="mt-4 text-[11px] text-white/15">
-        Developed by <a href="https://alihan-torebekov-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-gold/38 hover:text-gold transition-colors border-b border-transparent hover:border-gold/30">Alihan Torebekov</a>
+        Developed by <a href="https://alihan-torebekov.kg/" target="_blank" rel="noopener noreferrer" className="text-gold/38 hover:text-gold transition-colors border-b border-transparent hover:border-gold/30">Alihan Torebekov</a>
       </div>
     </footer>
   );
