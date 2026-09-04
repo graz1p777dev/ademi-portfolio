@@ -162,7 +162,7 @@ export default function Certificates() {
         </div>
 
         {certificates.note && (
-          <motion.p {...reveal} transition={{ ...reveal.transition, delay: 0.3 }} className="mt-12 text-white/30 text-xs max-w-xl">
+          <motion.p {...reveal} transition={{ ...reveal.transition, delay: 0.3 }} className="mt-12 max-w-xl border-l-2 border-gold/70 pl-4 text-white/75 text-sm leading-relaxed">
             {certificates.note}
           </motion.p>
         )}
