@@ -132,6 +132,11 @@ export default function Certificates() {
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     className="object-contain p-3.5 transition-transform duration-700 group-hover:scale-[1.035]"
                   />
+                  <div className="pointer-events-none absolute inset-0 grid grid-cols-2 grid-rows-4 -rotate-[22deg] scale-125 opacity-[0.22] mix-blend-multiply">
+                    {Array.from({ length: 8 }).map((_, watermarkIndex) => (
+                      <span key={watermarkIndex} className="flex items-center justify-center whitespace-nowrap text-[9px] font-semibold tracking-[0.18em] text-navy/70">ademi-portfolio.vercel.app</span>
+                    ))}
+                  </div>
                   {/* Виньетка по краям паспарту — глубина, как у настоящего стекла в раме */}
                   <div className="pointer-events-none absolute inset-0" style={{ boxShadow: 'inset 0 0 36px 6px rgba(30,20,5,0.14)' }} />
                   {/* Блик по стеклу — идёт по диагонали при наведении */}

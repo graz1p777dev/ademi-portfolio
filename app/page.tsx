@@ -7,6 +7,7 @@ import About from './components/About';
 import Store from './components/Store';
 import Profile from './components/Profile';
 import Certificates from './components/Certificates';
+import Education from './components/Education';
 import Mission from './components/Mission';
 import Social from './components/Social';
 import Contact from './components/Contact';
@@ -22,6 +23,7 @@ export default function Home() {
         <Store />
         <Profile />
         <Certificates />
+        <Education />
         <Mission />
         <Social />
         <Contact />

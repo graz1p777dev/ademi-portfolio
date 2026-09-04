@@ -22,15 +22,6 @@ export default function Store() {
             </div>
             <span className="font-display text-xl text-white/35 font-light">{data.brand.name}</span>
 
-            <div className="relative w-full max-w-[240px] aspect-square rounded-sm overflow-hidden group mt-4">
-              <div className="absolute -inset-px z-10 pointer-events-none border border-gold/15 rounded-sm" />
-              <div className="absolute z-10 pointer-events-none w-12 h-12 -top-1 -left-1 border-t border-l border-gold/25" />
-              <div className="absolute z-10 pointer-events-none w-12 h-12 -bottom-1 -right-1 border-b border-r border-gold/25" />
-              <Image src="/data/photo/my-command.png" alt="Клиенты" fill className="object-cover group-hover:scale-[1.02] transition-transform duration-700" />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent" />
-            </div>
-            <span className="font-display text-xl text-white/35 font-light">Клиенты</span>
-            <p className="font-display italic text-white/45 leading-relaxed text-center text-sm max-w-[240px]">{data.team.desc}</p>
           </motion.div>
           <div>
             <motion.div {...reveal} className="inline-block px-4 py-1.5 text-[10px] tracking-[0.22em] uppercase font-semibold rounded-sm mb-5 text-navy" style={{ background: 'linear-gradient(90deg, #c9a96e 30%, #e8d5b0 50%, #c9a96e 70%)', backgroundSize: '300px 100%', animation: 'badgeSweep 4s ease-in-out infinite' }}>{data.store.badge}</motion.div>
