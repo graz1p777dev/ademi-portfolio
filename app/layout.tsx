@@ -4,6 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Адеми Тергенбаева — Врач-дерматолог | Demi Results",
   description: "Кожа — это не косметика. Это наука. Врач-дерматолог, основатель Demi Results, Бишкек",
+  icons: {
+    icon: '/data/photo/ademi-avatar.png?v=2',
+    shortcut: '/data/photo/ademi-avatar.png?v=2',
+  },
   openGraph: {
     title: "Адеми Тергенбаева — Demi Results",
     description: "Кожа — это не косметика. Это наука.",
@@ -15,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ru" className="h-full antialiased">
       <head>
-        <link rel="icon" href="/data/photo/ademi-avatar.png" type="image/png" />
+        <link rel="icon" href="/data/photo/ademi-avatar.png?v=2" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
