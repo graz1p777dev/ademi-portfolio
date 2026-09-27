@@ -2,6 +2,7 @@
 
 import { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 import type { PortfolioData, Lang } from './types';
+import ruData from '../public/data/text/data.json';
 
 interface LangContextType {
   lang: Lang;
@@ -19,7 +20,7 @@ const FILES: Record<Lang, string> = {
 
 export function LangProvider({ children }: { children: ReactNode }) {
   const [lang, setLang] = useState<Lang>('ru');
-  const [cache, setCache] = useState<Record<string, PortfolioData>>({});
+  const [cache, setCache] = useState<Record<string, PortfolioData>>({ ru: ruData as PortfolioData });
   const data = cache[lang] ?? null;
 
   useEffect(() => {

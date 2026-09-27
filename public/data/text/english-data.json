@@ -92,6 +92,18 @@
       }
     ]
   },
+  "services": {
+    "title": "Dermatology and areas of work",
+    "intro": "A dermatologist in Bishkek helps you understand your skin, build a clear skincare routine, and choose the next steps for diagnosis and treatment.",
+    "items": [
+      { "name": "Dermatologist consultation", "description": "Review of skin concerns, history, and current routine with clear recommendations." },
+      { "name": "Acne and post-acne", "description": "Understanding contributing factors and building a structured approach to acne-prone skin." },
+      { "name": "Rosacea and dermatitis", "description": "Working with redness, sensitivity, inflammation, and a damaged skin barrier." },
+      { "name": "Psoriasis and skin conditions", "description": "A systematic approach to chronic skin conditions and ongoing care." },
+      { "name": "Scalp, hair, and nails", "description": "Skin of the scalp, foot and nail conditions, and superficial fungal infections." },
+      { "name": "Skincare and cosmetic ingredients", "description": "Personalized home-care selection and cosmetic ingredient analysis." }
+    ]
+  },
   "mission": {
     "title": "Approach",
     "text": "I help people better understand their skin, build proper skincare routines, and look at beauty through the lens of health, knowledge, and a systematic approach.",
@@ -156,11 +168,13 @@
     "socialTitle": "Social & Links",
     "openLink": "Open →",
     "team": "Team",
-    "certificates": "Certificates"
+    "certificates": "Certificates",
+    "services": "Areas of work"
   },
   "nav": {
     "about": "About",
     "profile": "Profile",
+    "services": "Services",
     "activity": "Activities",
     "social": "Social",
     "contact": "Contact",

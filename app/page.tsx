@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Store from './components/Store';
 import Profile from './components/Profile';
+import Services from './components/Services';
 import Certificates from './components/Certificates';
 import Education from './components/Education';
 import Mission from './components/Mission';
@@ -22,6 +23,7 @@ export default function Home() {
         <About />
         <Store />
         <Profile />
+        <Services />
         <Certificates />
         <Education />
         <Mission />

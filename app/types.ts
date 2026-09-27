@@ -87,6 +87,17 @@ export interface ContactData {
   whatsapp?: string;
 }
 
+export interface ServiceItem {
+  name: string;
+  description: string;
+}
+
+export interface ServicesData {
+  title: string;
+  intro: string;
+  items: ServiceItem[];
+}
+
 export interface FooterData {
   name: string;
   brand: string;
@@ -102,6 +113,7 @@ export interface Labels {
   socialTitle: string;
   openLink: string;
   certificates?: string;
+  services?: string;
 }
 
 export interface NavLabels {
@@ -110,6 +122,7 @@ export interface NavLabels {
   certificates?: string;
   social: string;
   contact: string;
+  services?: string;
 }
 
 export interface PortfolioData {
@@ -123,6 +136,7 @@ export interface PortfolioData {
   store: StoreData;
   social: SocialItem[];
   contact: ContactData;
+  services?: ServicesData;
   footer: FooterData;
   labels: Labels;
   nav: NavLabels;
